@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>composed and composedPath demo</title>
+    <script src="C:\Users\nirdesh.kumar\VC\WebComponent\UserCard\UserCard.js"></script>
+    <link rel="stylesheet" href="C:\Users\nirdesh.kumar\VC\WebComponent\UserCard\UserCard.css">
+  </head>
+  <body>
+        <user-card user-id="1">hello</user-card>
+    <template id="user-card-template">
+        <div class="card__user-card-container">
+          <h2 class="card__name">
+            <span class="card__full-name"></span> (
+            <span class="card__user-name"></span>)
+          </h2>
+          <p>Website: <a class="card__website"></a></p>
+          <div class="card__hidden-content">
+            <p class="card__address"></p>
+          </div>
+          <user-card user-id="1"></user-card>
+          <button class="card__details-btn">More Details</button>
+        </div>
+      </template>
+
+  </body>
+</html>
+ 
